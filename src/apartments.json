@@ -1,0 +1,1102 @@
+[
+  {
+    "id": "62b4e70b955895a640ef6bb0",
+    "plan": "img",
+    "apartment": "3-комнатная №1",
+    "area": 43.7,
+    "floor": {
+      "current": 11,
+      "all": 70
+    },
+    "price": 8124118
+  },
+  {
+    "id": "62b4e70b88d4aab41a64a37f",
+    "plan": "img",
+    "apartment": "2-комнатная №2",
+    "area": 40.2,
+    "floor": {
+      "current": 23,
+      "all": 56
+    },
+    "price": 3819643
+  },
+  {
+    "id": "62b4e70b74f16532306f0b77",
+    "plan": "img",
+    "apartment": "2-комнатная №3",
+    "area": 56,
+    "floor": {
+      "current": 5,
+      "all": 53
+    },
+    "price": 6564505
+  },
+  {
+    "id": "62b4e70b08f9f18dd53b4236",
+    "plan": "img",
+    "apartment": "2-комнатная №4",
+    "area": 64,
+    "floor": {
+      "current": 29,
+      "all": 66
+    },
+    "price": 3003449
+  },
+  {
+    "id": "62b4e70bfeaf09957ef33b7a",
+    "plan": "img",
+    "apartment": "1-комнатная №5",
+    "area": 51.8,
+    "floor": {
+      "current": 7,
+      "all": 65
+    },
+    "price": 5923364
+  },
+  {
+    "id": "62b4e70b100d5972f185930c",
+    "plan": "img",
+    "apartment": "3-комнатная №6",
+    "area": 55.1,
+    "floor": {
+      "current": 21,
+      "all": 69
+    },
+    "price": 695452
+  },
+  {
+    "id": "62b4e70b04fb43f237103bf6",
+    "plan": "img",
+    "apartment": "2-комнатная №7",
+    "area": 41.8,
+    "floor": {
+      "current": 31,
+      "all": 69
+    },
+    "price": 1070481
+  },
+  {
+    "id": "62b4e70b90813d91c5859060",
+    "plan": "img",
+    "apartment": "3-комнатная №8",
+    "area": 54.4,
+    "floor": {
+      "current": 42,
+      "all": 53
+    },
+    "price": 3382075
+  },
+  {
+    "id": "62b4e70b61427cc62152021a",
+    "plan": "img",
+    "apartment": "2-комнатная №9",
+    "area": 42.9,
+    "floor": {
+      "current": 25,
+      "all": 59
+    },
+    "price": 2334194
+  },
+  {
+    "id": "62b4e70b8c28c24985e8cca0",
+    "plan": "img",
+    "apartment": "1-комнатная №10",
+    "area": 43.5,
+    "floor": {
+      "current": 37,
+      "all": 62
+    },
+    "price": 5200027
+  },
+  {
+    "id": "62b4e70b8160427048adbc63",
+    "plan": "img",
+    "apartment": "3-комнатная №11",
+    "area": 68.1,
+    "floor": {
+      "current": 10,
+      "all": 55
+    },
+    "price": 287112
+  },
+  {
+    "id": "62b4e70b8a21d0c7788691c3",
+    "plan": "img",
+    "apartment": "3-комнатная №12",
+    "area": 41.2,
+    "floor": {
+      "current": 25,
+      "all": 59
+    },
+    "price": 4192055
+  },
+  {
+    "id": "62b4e70bf08a63ca35f2b7d3",
+    "plan": "img",
+    "apartment": "3-комнатная №13",
+    "area": 46.8,
+    "floor": {
+      "current": 47,
+      "all": 59
+    },
+    "price": 5049857
+  },
+  {
+    "id": "62b4e70bdf9e55ddcd6c88ee",
+    "plan": "img",
+    "apartment": "1-комнатная №14",
+    "area": 68.4,
+    "floor": {
+      "current": 17,
+      "all": 67
+    },
+    "price": 8260352
+  },
+  {
+    "id": "62b4e70b80941c3f2cd318c1",
+    "plan": "img",
+    "apartment": "2-комнатная №15",
+    "area": 41.8,
+    "floor": {
+      "current": 46,
+      "all": 54
+    },
+    "price": 3289055
+  },
+  {
+    "id": "62b4e70b0146e7e5dad91df5",
+    "plan": "img",
+    "apartment": "3-комнатная №16",
+    "area": 58,
+    "floor": {
+      "current": 11,
+      "all": 68
+    },
+    "price": 5953416
+  },
+  {
+    "id": "62b4e70b2011c6d7eb0f8790",
+    "plan": "img",
+    "apartment": "3-комнатная №17",
+    "area": 49.5,
+    "floor": {
+      "current": 43,
+      "all": 68
+    },
+    "price": 4250079
+  },
+  {
+    "id": "62b4e70b7b62957fcdad0370",
+    "plan": "img",
+    "apartment": "2-комнатная №18",
+    "area": 61.7,
+    "floor": {
+      "current": 32,
+      "all": 63
+    },
+    "price": 2078960
+  },
+  {
+    "id": "62b4e70b92db9b0b98af0462",
+    "plan": "img",
+    "apartment": "1-комнатная №19",
+    "area": 57.4,
+    "floor": {
+      "current": 29,
+      "all": 54
+    },
+    "price": 5190391
+  },
+  {
+    "id": "62b4e70b7d52944f1f373810",
+    "plan": "img",
+    "apartment": "1-комнатная №20",
+    "area": 52.2,
+    "floor": {
+      "current": 36,
+      "all": 61
+    },
+    "price": 4974774
+  },
+  {
+    "id": "62b4e70b7b9f12ebeea5aa29",
+    "plan": "img",
+    "apartment": "3-комнатная №21",
+    "area": 56,
+    "floor": {
+      "current": 12,
+      "all": 70
+    },
+    "price": 6938396
+  },
+  {
+    "id": "62b4e70b026ce1bb54f89369",
+    "plan": "img",
+    "apartment": "2-комнатная №22",
+    "area": 68.9,
+    "floor": {
+      "current": 30,
+      "all": 70
+    },
+    "price": 6613199
+  },
+  {
+    "id": "62b4e70b8552abb58d417cf3",
+    "plan": "img",
+    "apartment": "2-комнатная №23",
+    "area": 51.8,
+    "floor": {
+      "current": 23,
+      "all": 61
+    },
+    "price": 5322409
+  },
+  {
+    "id": "62b4e70b1b01be9cf242d452",
+    "plan": "img",
+    "apartment": "3-комнатная №24",
+    "area": 49.5,
+    "floor": {
+      "current": 19,
+      "all": 53
+    },
+    "price": 7189147
+  },
+  {
+    "id": "62b4e70bb3656010cba72b1d",
+    "plan": "img",
+    "apartment": "1-комнатная №25",
+    "area": 51,
+    "floor": {
+      "current": 15,
+      "all": 51
+    },
+    "price": 5288381
+  },
+  {
+    "id": "62b4e70bd712aca8f2679072",
+    "plan": "img",
+    "apartment": "3-комнатная №26",
+    "area": 48,
+    "floor": {
+      "current": 38,
+      "all": 54
+    },
+    "price": 7406781
+  },
+  {
+    "id": "62b4e70b719b7d564e30e244",
+    "plan": "img",
+    "apartment": "2-комнатная №27",
+    "area": 65.9,
+    "floor": {
+      "current": 32,
+      "all": 62
+    },
+    "price": 7243675
+  },
+  {
+    "id": "62b4e70b9fc8194c574351e3",
+    "plan": "img",
+    "apartment": "3-комнатная №28",
+    "area": 44.5,
+    "floor": {
+      "current": 35,
+      "all": 68
+    },
+    "price": 788588
+  },
+  {
+    "id": "62b4e70b10de6cd132ec728c",
+    "plan": "img",
+    "apartment": "3-комнатная №29",
+    "area": 41.1,
+    "floor": {
+      "current": 43,
+      "all": 58
+    },
+    "price": 8108753
+  },
+  {
+    "id": "62b4e70b5820b2c3bfa8fa60",
+    "plan": "img",
+    "apartment": "1-комнатная №30",
+    "area": 53.2,
+    "floor": {
+      "current": 50,
+      "all": 69
+    },
+    "price": 2343141
+  },
+  {
+    "id": "62b4e70b71379ff497c02dc4",
+    "plan": "img",
+    "apartment": "1-комнатная №31",
+    "area": 42.5,
+    "floor": {
+      "current": 50,
+      "all": 52
+    },
+    "price": 7047848
+  },
+  {
+    "id": "62b4e70b30954a022722d4a7",
+    "plan": "img",
+    "apartment": "3-комнатная №32",
+    "area": 55.4,
+    "floor": {
+      "current": 38,
+      "all": 64
+    },
+    "price": 3639830
+  },
+  {
+    "id": "62b4e70bd1e5c45e59d84761",
+    "plan": "img",
+    "apartment": "2-комнатная №33",
+    "area": 53.7,
+    "floor": {
+      "current": 30,
+      "all": 52
+    },
+    "price": 5539765
+  },
+  {
+    "id": "62b4e70ba3e90f58317c7efa",
+    "plan": "img",
+    "apartment": "1-комнатная №34",
+    "area": 67.2,
+    "floor": {
+      "current": 48,
+      "all": 61
+    },
+    "price": 5666967
+  },
+  {
+    "id": "62b4e70b2ba745e3868d39a5",
+    "plan": "img",
+    "apartment": "3-комнатная №35",
+    "area": 52.9,
+    "floor": {
+      "current": 47,
+      "all": 60
+    },
+    "price": 8526320
+  },
+  {
+    "id": "62b4e70ba07bf8d18a751b2d",
+    "plan": "img",
+    "apartment": "1-комнатная №36",
+    "area": 53,
+    "floor": {
+      "current": 13,
+      "all": 70
+    },
+    "price": 4561130
+  },
+  {
+    "id": "62b4e70b47d2aff630f8ab2b",
+    "plan": "img",
+    "apartment": "2-комнатная №37",
+    "area": 40.5,
+    "floor": {
+      "current": 29,
+      "all": 61
+    },
+    "price": 4371383
+  },
+  {
+    "id": "62b4e70b2ac0c103e56f452a",
+    "plan": "img",
+    "apartment": "3-комнатная №38",
+    "area": 57.3,
+    "floor": {
+      "current": 31,
+      "all": 63
+    },
+    "price": 8720146
+  },
+  {
+    "id": "62b4e70b267450c00c21dab1",
+    "plan": "img",
+    "apartment": "3-комнатная №39",
+    "area": 53.4,
+    "floor": {
+      "current": 26,
+      "all": 63
+    },
+    "price": 4659496
+  },
+  {
+    "id": "62b4e70b079d93684aadf3e4",
+    "plan": "img",
+    "apartment": "2-комнатная №40",
+    "area": 54.7,
+    "floor": {
+      "current": 34,
+      "all": 66
+    },
+    "price": 3589622
+  },
+  {
+    "id": "62b4e70b87eb4f5dab0ac8b3",
+    "plan": "img",
+    "apartment": "3-комнатная №41",
+    "area": 55.1,
+    "floor": {
+      "current": 6,
+      "all": 52
+    },
+    "price": 7252583
+  },
+  {
+    "id": "62b4e70bdaf618339d6a0fac",
+    "plan": "img",
+    "apartment": "2-комнатная №42",
+    "area": 47.8,
+    "floor": {
+      "current": 32,
+      "all": 51
+    },
+    "price": 1935766
+  },
+  {
+    "id": "62b4e70bbf715ca7c8029965",
+    "plan": "img",
+    "apartment": "1-комнатная №43",
+    "area": 61.6,
+    "floor": {
+      "current": 16,
+      "all": 57
+    },
+    "price": 7776045
+  },
+  {
+    "id": "62b4e70b175156738723b0bd",
+    "plan": "img",
+    "apartment": "1-комнатная №44",
+    "area": 46.8,
+    "floor": {
+      "current": 43,
+      "all": 59
+    },
+    "price": 574221
+  },
+  {
+    "id": "62b4e70bd4935e8e238e10c5",
+    "plan": "img",
+    "apartment": "2-комнатная №45",
+    "area": 64.5,
+    "floor": {
+      "current": 44,
+      "all": 67
+    },
+    "price": 7608847
+  },
+  {
+    "id": "62b4e70b424e28a0099b2f0c",
+    "plan": "img",
+    "apartment": "1-комнатная №46",
+    "area": 64.1,
+    "floor": {
+      "current": 25,
+      "all": 66
+    },
+    "price": 313678
+  },
+  {
+    "id": "62b4e70bd8ef50a83cd4b5db",
+    "plan": "img",
+    "apartment": "1-комнатная №47",
+    "area": 63.1,
+    "floor": {
+      "current": 5,
+      "all": 67
+    },
+    "price": 3982943
+  },
+  {
+    "id": "62b4e70b1abb8cd0f02da565",
+    "plan": "img",
+    "apartment": "1-комнатная №48",
+    "area": 54.1,
+    "floor": {
+      "current": 19,
+      "all": 53
+    },
+    "price": 3235320
+  },
+  {
+    "id": "62b4e70b1dc35214c4fe2602",
+    "plan": "img",
+    "apartment": "2-комнатная №49",
+    "area": 67.3,
+    "floor": {
+      "current": 19,
+      "all": 55
+    },
+    "price": 7807016
+  },
+  {
+    "id": "62b4e70b4fc47a15e93e2daf",
+    "plan": "img",
+    "apartment": "3-комнатная №50",
+    "area": 69.2,
+    "floor": {
+      "current": 22,
+      "all": 54
+    },
+    "price": 2797742
+  },
+  {
+    "id": "62b4e70b39fdb985a3863289",
+    "plan": "img",
+    "apartment": "3-комнатная №51",
+    "area": 60.4,
+    "floor": {
+      "current": 20,
+      "all": 54
+    },
+    "price": 253101
+  },
+  {
+    "id": "62b4e70b944b917c1ccec224",
+    "plan": "img",
+    "apartment": "1-комнатная №52",
+    "area": 67.7,
+    "floor": {
+      "current": 32,
+      "all": 51
+    },
+    "price": 2095813
+  },
+  {
+    "id": "62b4e70b84aee89886f99109",
+    "plan": "img",
+    "apartment": "3-комнатная №53",
+    "area": 52,
+    "floor": {
+      "current": 25,
+      "all": 66
+    },
+    "price": 4785507
+  },
+  {
+    "id": "62b4e70bc928c1d2d91f1447",
+    "plan": "img",
+    "apartment": "3-комнатная №54",
+    "area": 58.9,
+    "floor": {
+      "current": 32,
+      "all": 61
+    },
+    "price": 1166249
+  },
+  {
+    "id": "62b4e70bac7bfc3038ce3311",
+    "plan": "img",
+    "apartment": "2-комнатная №55",
+    "area": 67.3,
+    "floor": {
+      "current": 10,
+      "all": 52
+    },
+    "price": 3865953
+  },
+  {
+    "id": "62b4e70b5c9b8b6829f6796a",
+    "plan": "img",
+    "apartment": "2-комнатная №56",
+    "area": 40.9,
+    "floor": {
+      "current": 35,
+      "all": 70
+    },
+    "price": 162475
+  },
+  {
+    "id": "62b4e70be11e11a201afa372",
+    "plan": "img",
+    "apartment": "1-комнатная №57",
+    "area": 51.5,
+    "floor": {
+      "current": 31,
+      "all": 54
+    },
+    "price": 3721075
+  },
+  {
+    "id": "62b4e70b9fe8ab82a1f2e3ca",
+    "plan": "img",
+    "apartment": "1-комнатная №58",
+    "area": 67.1,
+    "floor": {
+      "current": 6,
+      "all": 68
+    },
+    "price": 4938180
+  },
+  {
+    "id": "62b4e70b7ef3eaedf063faad",
+    "plan": "img",
+    "apartment": "1-комнатная №59",
+    "area": 42.5,
+    "floor": {
+      "current": 16,
+      "all": 62
+    },
+    "price": 6671529
+  },
+  {
+    "id": "62b4e70be34d133bf6b23041",
+    "plan": "img",
+    "apartment": "3-комнатная №60",
+    "area": 48.8,
+    "floor": {
+      "current": 26,
+      "all": 54
+    },
+    "price": 1361636
+  },
+  {
+    "id": "62b4e70b5f2a65e57e2d3b2a",
+    "plan": "img",
+    "apartment": "1-комнатная №61",
+    "area": 47,
+    "floor": {
+      "current": 20,
+      "all": 64
+    },
+    "price": 8326998
+  },
+  {
+    "id": "62b4e70b1693de3ea038bde9",
+    "plan": "img",
+    "apartment": "3-комнатная №62",
+    "area": 66.5,
+    "floor": {
+      "current": 9,
+      "all": 51
+    },
+    "price": 6134562
+  },
+  {
+    "id": "62b4e70b48c28a66a07c2250",
+    "plan": "img",
+    "apartment": "2-комнатная №63",
+    "area": 53.4,
+    "floor": {
+      "current": 17,
+      "all": 56
+    },
+    "price": 567834
+  },
+  {
+    "id": "62b4e70b3b8759b5f3eb7745",
+    "plan": "img",
+    "apartment": "3-комнатная №64",
+    "area": 54.9,
+    "floor": {
+      "current": 37,
+      "all": 58
+    },
+    "price": 7187393
+  },
+  {
+    "id": "62b4e70bb97b1304fd007464",
+    "plan": "img",
+    "apartment": "2-комнатная №65",
+    "area": 45.8,
+    "floor": {
+      "current": 22,
+      "all": 55
+    },
+    "price": 6354887
+  },
+  {
+    "id": "62b4e70b2af8037f172eb636",
+    "plan": "img",
+    "apartment": "2-комнатная №66",
+    "area": 47.5,
+    "floor": {
+      "current": 28,
+      "all": 66
+    },
+    "price": 1327916
+  },
+  {
+    "id": "62b4e70bead28ea5672aaee8",
+    "plan": "img",
+    "apartment": "3-комнатная №67",
+    "area": 65.6,
+    "floor": {
+      "current": 26,
+      "all": 52
+    },
+    "price": 340844
+  },
+  {
+    "id": "62b4e70be28a4bd3196270df",
+    "plan": "img",
+    "apartment": "1-комнатная №68",
+    "area": 59.7,
+    "floor": {
+      "current": 49,
+      "all": 54
+    },
+    "price": 1142714
+  },
+  {
+    "id": "62b4e70bc8c21c1066f6095b",
+    "plan": "img",
+    "apartment": "2-комнатная №69",
+    "area": 48,
+    "floor": {
+      "current": 22,
+      "all": 68
+    },
+    "price": 1296168
+  },
+  {
+    "id": "62b4e70bd4b75d9dcbbe2966",
+    "plan": "img",
+    "apartment": "1-комнатная №70",
+    "area": 43,
+    "floor": {
+      "current": 39,
+      "all": 60
+    },
+    "price": 3077991
+  },
+  {
+    "id": "62b4e70b4e1b3e82504994f1",
+    "plan": "img",
+    "apartment": "1-комнатная №71",
+    "area": 45.5,
+    "floor": {
+      "current": 30,
+      "all": 50
+    },
+    "price": 7486259
+  },
+  {
+    "id": "62b4e70b3f8647efc40b46d7",
+    "plan": "img",
+    "apartment": "2-комнатная №72",
+    "area": 48.2,
+    "floor": {
+      "current": 43,
+      "all": 65
+    },
+    "price": 4883251
+  },
+  {
+    "id": "62b4e70b9a26e44cf0cad821",
+    "plan": "img",
+    "apartment": "3-комнатная №73",
+    "area": 58,
+    "floor": {
+      "current": 25,
+      "all": 61
+    },
+    "price": 872798
+  },
+  {
+    "id": "62b4e70bb3768fe74b544880",
+    "plan": "img",
+    "apartment": "2-комнатная №74",
+    "area": 67.7,
+    "floor": {
+      "current": 24,
+      "all": 58
+    },
+    "price": 639329
+  },
+  {
+    "id": "62b4e70b288e5121ce257e26",
+    "plan": "img",
+    "apartment": "1-комнатная №75",
+    "area": 45.8,
+    "floor": {
+      "current": 31,
+      "all": 54
+    },
+    "price": 7789327
+  },
+  {
+    "id": "62b4e70b865fa9e6b1e1f2bd",
+    "plan": "img",
+    "apartment": "1-комнатная №76",
+    "area": 53.2,
+    "floor": {
+      "current": 41,
+      "all": 56
+    },
+    "price": 7650861
+  },
+  {
+    "id": "62b4e70b094d2c6095c1429a",
+    "plan": "img",
+    "apartment": "3-комнатная №77",
+    "area": 54.9,
+    "floor": {
+      "current": 49,
+      "all": 67
+    },
+    "price": 2640519
+  },
+  {
+    "id": "62b4e70b70db9c08bcd2a4d7",
+    "plan": "img",
+    "apartment": "2-комнатная №78",
+    "area": 66.6,
+    "floor": {
+      "current": 32,
+      "all": 70
+    },
+    "price": 8471959
+  },
+  {
+    "id": "62b4e70b2b8d3ae9470912d7",
+    "plan": "img",
+    "apartment": "2-комнатная №79",
+    "area": 57.4,
+    "floor": {
+      "current": 8,
+      "all": 69
+    },
+    "price": 5000674
+  },
+  {
+    "id": "62b4e70bf6154b167769934c",
+    "plan": "img",
+    "apartment": "1-комнатная №80",
+    "area": 52.7,
+    "floor": {
+      "current": 36,
+      "all": 66
+    },
+    "price": 2039774
+  },
+  {
+    "id": "62b4e70b7cf0801581be5832",
+    "plan": "img",
+    "apartment": "2-комнатная №81",
+    "area": 57.9,
+    "floor": {
+      "current": 38,
+      "all": 59
+    },
+    "price": 4578625
+  },
+  {
+    "id": "62b4e70b59923122a3f5dceb",
+    "plan": "img",
+    "apartment": "2-комнатная №82",
+    "area": 42.3,
+    "floor": {
+      "current": 16,
+      "all": 68
+    },
+    "price": 6240524
+  },
+  {
+    "id": "62b4e70b51c0e214e2a9e4ed",
+    "plan": "img",
+    "apartment": "2-комнатная №83",
+    "area": 41.7,
+    "floor": {
+      "current": 11,
+      "all": 58
+    },
+    "price": 2317679
+  },
+  {
+    "id": "62b4e70b1df89dabba1d005f",
+    "plan": "img",
+    "apartment": "1-комнатная №84",
+    "area": 43.4,
+    "floor": {
+      "current": 47,
+      "all": 64
+    },
+    "price": 8596953
+  },
+  {
+    "id": "62b4e70bbf36ec3368fb72b0",
+    "plan": "img",
+    "apartment": "3-комнатная №85",
+    "area": 69.9,
+    "floor": {
+      "current": 48,
+      "all": 69
+    },
+    "price": 8646345
+  },
+  {
+    "id": "62b4e70b8ee7d45d3d68e1a2",
+    "plan": "img",
+    "apartment": "2-комнатная №86",
+    "area": 52.5,
+    "floor": {
+      "current": 7,
+      "all": 50
+    },
+    "price": 4180485
+  },
+  {
+    "id": "62b4e70b21ec3b2b88ba7f58",
+    "plan": "img",
+    "apartment": "1-комнатная №87",
+    "area": 54,
+    "floor": {
+      "current": 24,
+      "all": 53
+    },
+    "price": 3743195
+  },
+  {
+    "id": "62b4e70b8fb062acbf4b1051",
+    "plan": "img",
+    "apartment": "1-комнатная №88",
+    "area": 57.6,
+    "floor": {
+      "current": 7,
+      "all": 53
+    },
+    "price": 5132018
+  },
+  {
+    "id": "62b4e70bacafdcec1b21637d",
+    "plan": "img",
+    "apartment": "3-комнатная №89",
+    "area": 46.4,
+    "floor": {
+      "current": 15,
+      "all": 55
+    },
+    "price": 6264193
+  },
+  {
+    "id": "62b4e70bbe02929418fe84b6",
+    "plan": "img",
+    "apartment": "2-комнатная №90",
+    "area": 44.1,
+    "floor": {
+      "current": 38,
+      "all": 56
+    },
+    "price": 7182544
+  },
+  {
+    "id": "62b4e70b623fb9d06e566f48",
+    "plan": "img",
+    "apartment": "1-комнатная №91",
+    "area": 64.7,
+    "floor": {
+      "current": 47,
+      "all": 66
+    },
+    "price": 5357976
+  },
+  {
+    "id": "62b4e70b1eec1ea14543ee46",
+    "plan": "img",
+    "apartment": "1-комнатная №92",
+    "area": 57.7,
+    "floor": {
+      "current": 16,
+      "all": 54
+    },
+    "price": 1886908
+  },
+  {
+    "id": "62b4e70b506b571d1ff13951",
+    "plan": "img",
+    "apartment": "1-комнатная №93",
+    "area": 62.9,
+    "floor": {
+      "current": 10,
+      "all": 58
+    },
+    "price": 4351758
+  },
+  {
+    "id": "62b4e70bc15c010e41cd526f",
+    "plan": "img",
+    "apartment": "3-комнатная №94",
+    "area": 62.3,
+    "floor": {
+      "current": 40,
+      "all": 68
+    },
+    "price": 7788633
+  },
+  {
+    "id": "62b4e70b717ed485c4eff1db",
+    "plan": "img",
+    "apartment": "1-комнатная №95",
+    "area": 60.2,
+    "floor": {
+      "current": 42,
+      "all": 61
+    },
+    "price": 4540242
+  },
+  {
+    "id": "62b4e70b38ad7af2447ff027",
+    "plan": "img",
+    "apartment": "2-комнатная №96",
+    "area": 46.5,
+    "floor": {
+      "current": 18,
+      "all": 66
+    },
+    "price": 7976237
+  },
+  {
+    "id": "62b4e70b72af240c4c7a1cfa",
+    "plan": "img",
+    "apartment": "1-комнатная №97",
+    "area": 61.5,
+    "floor": {
+      "current": 30,
+      "all": 64
+    },
+    "price": 356629
+  },
+  {
+    "id": "62b4e70b9d4fc9c5f12eeaa6",
+    "plan": "img",
+    "apartment": "2-комнатная №98",
+    "area": 47.6,
+    "floor": {
+      "current": 26,
+      "all": 50
+    },
+    "price": 3216321
+  },
+  {
+    "id": "62b4e70bb04d5a0cbbeb8b3d",
+    "plan": "img",
+    "apartment": "3-комнатная №99",
+    "area": 44.8,
+    "floor": {
+      "current": 44,
+      "all": 54
+    },
+    "price": 3959768
+  },
+  {
+    "id": "62b4e70b2fd88142a85d7ec7",
+    "plan": "img",
+    "apartment": "2-комнатная №100",
+    "area": 58.8,
+    "floor": {
+      "current": 13,
+      "all": 62
+    },
+    "price": 6847039
+  }
+]

@@ -7,14 +7,21 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "start": "yarn json-server --watch dist/apartments.json --static dist",
     "build": "yarn gulp"
   },
   "devDependencies": {
+    "browserify": "^17.0.0",
     "gulp": "^4.0.2",
     "gulp-file-include": "^2.3.0",
     "gulp-sass": "^5.1.0",
     "gulp-typescript": "^6.0.0-alpha.1",
     "sass": "^1.53.0",
-    "typescript": "^4.7.4"
+    "tsify": "^5.0.4",
+    "typescript": "^4.7.4",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "dependencies": {
+    "json-server": "^0.17.0"
   }
 }

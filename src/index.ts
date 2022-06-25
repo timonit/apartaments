@@ -1,5 +1,10 @@
-let a: string;
+import Api from './api/api';
 
-if (true) a = 'timon';
+async function getList() {
+  const api = new Api();
 
-console.log(a);
+  console.log(await api.getMinMax("area"));
+}
+
+const btn = document.querySelector("button");
+btn?.addEventListener("click", getList);

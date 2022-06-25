@@ -2,15 +2,28 @@ const { src, dest, series } = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const include = require('gulp-file-include');
 const tsGulp = require('gulp-typescript');
+const tsify = require('tsify');
+const browserify = require('browserify');
+const source = require('vinyl-source-stream');
 
 const createProject = tsGulp.createProject('tsconfig.json');
 
 function ts() {
-  return src('src/**/*.ts')
-    .pipe(createProject())
-    .pipe(dest('dist'));
+  // return src('src/**/*.ts')
+  //   .pipe(createProject())
+  //   .pipe(dest('dist'));
 
-  // return tsResult.js.pipe(dest('dist'));
+  return browserify({
+    basedir: '.',
+    debug: true,
+    entries: ['src/index.ts'],
+    cache: {},
+    packageCache: {},
+  })
+    .plugin(tsify, {project: 'tsconfig.json'})
+    .bundle()
+    .pipe(source('index.js'))
+    .pipe(dest('dist'));
 }
 
 function styles() {
@@ -29,9 +42,12 @@ function html() {
 }
 
 function other() {
-  return src(['src/**/*', '!src/**/*.scss', '!src/**/*.html']).pipe(
-    dest('dist/')
-  );
+  return src([
+    'src/**/*',
+    '!src/**/*.scss',
+    '!src/**/*.html',
+    '!src/**/*.ts',
+  ]).pipe(dest('dist/'));
 }
 
 exports.default = series(ts, html, styles, other);

@@ -1,5 +1,16 @@
+// variables
+$color-bg: #ffffff;
+$color-font: #0b1739;
+$color-accent: #3EB57C;
+$shadow: 0px 6px 20px #95D0A1;
+
+
+// common rules
 :root {
   font-family: PTRootUIWebRegular;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 body {
@@ -11,11 +22,29 @@ body {
   background-color: gray;
 }
 
+h1 {
+  font-family: PTRootUIWebBold;
+  font-size: 54px;
+  line-height: 55px;
+  margin: 0;
+  padding: 0;
+}
+
+small {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
 button {
   font-family: PTRootUIWebRegular;
 }
 
 
+
+
+
+// rules
 .body {
   display: flex;
   flex-direction: column;
@@ -32,7 +61,6 @@ button {
     gap: 80px;
     align-self: stretch;
     flex-grow: 0;
-    background-attachment: green;
 
     .result {
       display: flex;
@@ -40,7 +68,6 @@ button {
       align-items: flex-start;
       gap: 48px;
       flex-grow: 1;
-      background-color: yellow;
 
       .head {
         width: 100%;

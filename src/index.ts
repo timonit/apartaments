@@ -1,9 +1,9 @@
 import Api from './api/api';
 
-async function getList() {
+async function getList(): Promise<void> {
   const api = new Api();
 
-  console.log(await api.getMinMax("area"));
+  console.log(await api.getMinMax('area'));
 }
 
 const btn = document.querySelector("button");

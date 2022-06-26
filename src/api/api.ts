@@ -6,7 +6,7 @@ type MinMax = { min: number; max: number };
 export default class Api implements IApi {
   origin = document.URL;
 
-  createParams(filter: QueryParams): URLSearchParams {
+  private createParams(filter: QueryParams): URLSearchParams {
     const params = new URLSearchParams('_limit=20');
     const from = filter.from;
     const to = filter.to;
@@ -17,6 +17,9 @@ export default class Api implements IApi {
     return params;
   }
 
+  /**
+   * list apartments 
+   */
   async getApartments(filter: QueryParams, page: number): Promise<Apartment[]> {
     const params = this.createParams(filter);
     params.append('_page', String(page));
@@ -27,6 +30,9 @@ export default class Api implements IApi {
     return fetch(url).then((res) => res.json()) as unknown as Apartment[];
   }
 
+  /**
+   * get min and max field value of apartment in db
+   */
   async getMinMax(prop: keyof Apartment): Promise<MinMax> {
     const minUrl = new URL(
       `apartments?_limit=1&_order=asc&_sort=${prop}`,

@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "yarn json-server --watch dist/apartments.json --static dist",
+    "start": "yarn json-server --watch dist/apartments.json --static dist --host 0.0.0.0",
     "build": "yarn gulp"
   },
   "devDependencies": {

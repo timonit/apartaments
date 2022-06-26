@@ -2,13 +2,85 @@
   font-family: PTRootUIWebRegular;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: gray;
+}
+
 button {
   font-family: PTRootUIWebRegular;
 }
 
-body {
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 96px 80px;
+  background: #ffffff;
+  width: 1440px;
+
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 80px;
+    align-self: stretch;
+    flex-grow: 0;
+    background-attachment: green;
+
+    .result {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 48px;
+      flex-grow: 1;
+      background-color: yellow;
+
+      .head {
+        width: 100%;
+      }
+    }
+
+    .filter {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+      gap: 10px;
+      box-sizing: border-box;
+      width: 399px;
+
+      background: linear-gradient(
+        135deg,
+        rgba(174, 228, 178, 0.3) 0%,
+        rgba(149, 208, 161, 0.3) 100%
+      );
+      border-radius: 10px;
+      order: 1;
+      flex-grow: 0;
+    }
+  }
 }
 
-h1 {
-  color: red;
+@media (max-width: 1439px) {
+  .body {
+    width: 960px;
+    padding: 48px 54px;
+
+    .content {
+      gap: 36px;
+      
+      .filter {
+        padding: 20px 19px;
+        width: 318px;
+      }
+    }
+
+  }
 }

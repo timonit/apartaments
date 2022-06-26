@@ -1,5 +1,37 @@
-<ul>
-  <li>timon</li>
-  <li>timon</li>
-  <li>timon</li>
-</ul>
+<div class="list" id="apartment-list">
+  <div class="list-head row">
+    <div class="col">
+      <small>Планировка</small>
+    </div>
+    <div class="col">
+      <small>Квартира</small>
+    </div>
+    <div class="col" id="area-col">
+      <small>
+        S, м²
+      </small>
+      <div class="sort" data-col-name="area">
+        <img class="increase" src="../assets/icons/Arrow Down Icon.svg" height="4px">
+        <img class="decrease" src="../assets/icons/Arrow Down Icon.svg" height="4px">
+      </div>
+    </div>
+    <div class="col" id="floor-col">
+      <small>Этаж</small>
+      <div class="sort" data-col-name="floor">
+        <img class="increase" src="../assets/icons/Arrow Down Icon.svg" height="4px">
+        <img class="decrease" src="../assets/icons/Arrow Down Icon.svg" height="4px">
+      </div>
+    </div>
+    <div class="col" id="price-col">
+      <small><b>Цена, ₽</b></small>
+      <div class="sort" data-col-name="price">
+        <img class="increase" src="../assets/icons/Arrow Down Icon.svg" height="4px">
+        <img class="decrease" src="../assets/icons/Arrow Down Icon.svg" height="4px">
+      </div>
+    </div>
+  </div>
+</div>
+
+<button type="button" class="load-more" id="load-more">
+  <b>Загрузить еще</b>
+</button>

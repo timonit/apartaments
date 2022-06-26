@@ -1,0 +1,56 @@
+@import './common.scss';
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr 2fr 2fr;
+    column-gap: 20px;
+
+    align-items: flex-start;
+    padding: 16px 0px 24px;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+
+    &.list-head {
+      padding: 0px 0px 16px;
+
+      .sort {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+
+        .decrease {
+          transform: rotate(180deg);
+        }
+      }
+
+      #price-col {
+        color: $color-accent;
+      }
+    }
+
+    .col {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+
+      .secondary {
+        opacity: .5;
+      }
+    }
+  }
+}
+
+.load-more {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 24px;
+  gap: 10px;
+  background-color: transparent;
+  border: 1px solid rgba(11, 23, 57, 0.2);
+  border-radius: 25px;
+}

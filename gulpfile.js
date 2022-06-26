@@ -9,10 +9,6 @@ const source = require('vinyl-source-stream');
 const createProject = tsGulp.createProject('tsconfig.json');
 
 function ts() {
-  // return src('src/**/*.ts')
-  //   .pipe(createProject())
-  //   .pipe(dest('dist'));
-
   return browserify({
     basedir: '.',
     debug: true,

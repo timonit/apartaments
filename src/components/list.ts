@@ -2,6 +2,8 @@ import Api from '../api/api';
 import Component from '../api/component';
 import Apartment from '../api/Apartment';
 import { QueryParams } from '../api/i-api';
+import { store } from '../api/store';
+import { stat } from 'fs';
 
 const ROW_CLASS = 'row';
 const COL_CLASS = 'col';
@@ -20,24 +22,24 @@ class ListComponent extends Component {
 
   currentPage = 1;
 
-  currentFilter: QueryParams = {
-    from: {
-      numberOfRooms: 1,
-      apartmentNumber: 1,
-      area: 1,
-      floor: 1,
-      price: 1,
-      numberOfFloors: 1,
-    },
-    to: {
-      numberOfRooms: 4,
-      apartmentNumber: 10000,
-      area: 100,
-      floor: 100,
-      price: 100000000,
-      numberOfFloors: 100,
-    }
-  }
+  // currentFilter: QueryParams = {
+  //   from: {
+  //     numberOfRooms: 1,
+  //     apartmentNumber: 1,
+  //     area: 1,
+  //     floor: 1,
+  //     price: 1,
+  //     numberOfFloors: 1,
+  //   },
+  //   to: {
+  //     numberOfRooms: 4,
+  //     apartmentNumber: 10000,
+  //     area: 100,
+  //     floor: 100,
+  //     price: 100000000,
+  //     numberOfFloors: 100,
+  //   }
+  // }
 
   private createPlan(): HTMLImageElement {
     const img = this.createElement('img') as HTMLImageElement;
@@ -104,13 +106,13 @@ class ListComponent extends Component {
     );
   }
 
-  private async fetchList(): Promise<void> {
-    this.setList(await this.api.getApartments(this.currentFilter, 1));
-  }
+  // private async fetchList(): Promise<void> {
+  //   this.setList(await this.api.getApartments(store.state.filter, 1));
+  // }
 
   async nextPage(): Promise<void> {
     const nextPage = this.currentPage + 1;
-    const result =  await this.api.getApartments(this.currentFilter, nextPage);
+    const result =  await this.api.getApartments(store.state.filter, nextPage);
 
     if (result) {
       this.addItems(result);
@@ -119,12 +121,15 @@ class ListComponent extends Component {
   }
 
   async init(): Promise<void> {
-    await this.fetchList();
+    // await this.fetchList();
+    store.onChange((state) => this.setList(state.list));
+    await store.setFilter(store.state.filter);
   }
 
   filter(filter: QueryParams) {
-    this.currentFilter = filter;
-    this.fetchList();
+    // store.setFilter(filter);
+    // this.currentFilter = filter;
+    // this.fetchList();
   }
 }
 
@@ -132,24 +137,24 @@ export const listComponent = new ListComponent();
 listComponent.init();
 
 
-const btn = document.querySelector('#load-more');
-btn?.addEventListener('click', () => {
-  listComponent.filter({
-    from: {
-      numberOfRooms: 1,
-      apartmentNumber: 50,
-      area: 1,
-      floor: 1,
-      price: 1,
-      numberOfFloors: 1,
-    },
-    to: {
-      numberOfRooms: 4,
-      apartmentNumber: 10000,
-      area: 100,
-      floor: 100,
-      price: 100000000,
-      numberOfFloors: 100,
-    }
-  });
-})
+// const btn = document.querySelector('#load-more');
+// btn?.addEventListener('click', () => {
+//   listComponent.filter({
+//     from: {
+//       numberOfRooms: 1,
+//       apartmentNumber: 50,
+//       area: 1,
+//       floor: 1,
+//       price: 1,
+//       numberOfFloors: 1,
+//     },
+//     to: {
+//       numberOfRooms: 4,
+//       apartmentNumber: 10000,
+//       area: 100,
+//       floor: 100,
+//       price: 100000000,
+//       numberOfFloors: 100,
+//     }
+//   });
+// })

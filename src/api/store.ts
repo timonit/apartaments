@@ -7,6 +7,7 @@ export type StoreState = {
   isFetching: boolean;
   list: Apartment[];
   page: number;
+  totalCount: number;
 };
 
 export type Store = {
@@ -14,7 +15,7 @@ export type Store = {
   onChange: (cb: (state: StoreState) => void) => void;
   setState: (state: StoreState) => void;
   setFilter(filter: QueryParams): void;
-  nextPage(filter: QueryParams): void;
+  nextPage(): void;
   setStatus(isFetching: boolean): void;
   subscribers: ((state: StoreState) => void)[];
   setDefaultFilter: () => void;
@@ -44,6 +45,7 @@ export const store: Store = {
     filter: defaultFilter,
     list: [],
     page: 1,
+    totalCount: 100,
   },
   subscribers: [],
   onChange(cb: (state: StoreState) => void): void {
@@ -59,19 +61,30 @@ export const store: Store = {
     this.setStatus(true);
     const api = new Api();
     const page = this.state.page + 1;
-    const list = await api.getApartments(store.state.filter, page);
+    const list = this.state.list.concat(
+      await api.getApartments(store.state.filter, page)
+    );
+    const totalCount = api.totalCount as number;
     await this.setState({
       isFetching: false,
       list,
       filter: this.state.filter,
       page,
+      totalCount,
     });
   },
   async setFilter(filter: QueryParams): Promise<void> {
     this.setStatus(true);
     const api = new Api();
     const list = await api.getApartments(filter, 1);
-    await this.setState({ isFetching: false, list, filter, page: 1 });
+    const totalCount = api.totalCount as number;
+    await this.setState({
+      isFetching: false,
+      list,
+      filter,
+      page: 1,
+      totalCount,
+    });
   },
   async setStatus(isFetching: boolean): Promise<void> {
     await this.setState({ ...this.state, isFetching });

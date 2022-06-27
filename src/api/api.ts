@@ -6,6 +6,8 @@ export type MinMax = { min: number; max: number };
 export default class Api implements IApi {
   origin = document.URL;
 
+  totalCount?: number;
+
   private createParams(filter: QueryParams): URLSearchParams {
     const params = new URLSearchParams('_limit=20');
     const from = filter.from;
@@ -30,7 +32,10 @@ export default class Api implements IApi {
     const url = new URL('apartments', document.URL);
     url.search = params.toString();
 
-    return fetch(url).then((res) => res.json()) as unknown as Apartment[];
+    return fetch(url).then((res) => {
+      this.totalCount = Number(res.headers.get('X-Total-Count')) || undefined;
+      return res.json()
+    }) as unknown as Apartment[];
   }
 
   /**

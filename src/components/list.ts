@@ -1,9 +1,7 @@
 import Api from '../api/api';
 import Component from '../api/component';
 import Apartment from '../api/Apartment';
-import { QueryParams } from '../api/i-api';
 import { store } from '../api/store';
-import { stat } from 'fs';
 
 const ROW_CLASS = 'row';
 const COL_CLASS = 'col';
@@ -16,30 +14,13 @@ class ListComponent extends Component {
 
   headRow = document.querySelector('.list-head') as HTMLElement;
 
+  btnLoadMore = document.querySelector('#load-more') as HTMLButtonElement;
+
   list: HTMLElement[] = [];
 
   private api = new Api();
 
   currentPage = 1;
-
-  // currentFilter: QueryParams = {
-  //   from: {
-  //     numberOfRooms: 1,
-  //     apartmentNumber: 1,
-  //     area: 1,
-  //     floor: 1,
-  //     price: 1,
-  //     numberOfFloors: 1,
-  //   },
-  //   to: {
-  //     numberOfRooms: 4,
-  //     apartmentNumber: 10000,
-  //     area: 100,
-  //     floor: 100,
-  //     price: 100000000,
-  //     numberOfFloors: 100,
-  //   }
-  // }
 
   private createPlan(): HTMLImageElement {
     const img = this.createElement('img') as HTMLImageElement;
@@ -83,7 +64,10 @@ class ListComponent extends Component {
     );
 
     // adding price col
-    this.createCol(this.createElement('span', { content: obj.price.toLocaleString() }), row);
+    this.createCol(
+      this.createElement('span', { content: obj.price.toLocaleString() }),
+      row
+    );
 
     return row;
   }
@@ -98,63 +82,29 @@ class ListComponent extends Component {
     });
   }
 
-  private addItems(items: Apartment[]): void {
-    this.list = this.list.concat(
-      items.map((item) => {
-        return this.createRow(item);
-      })
-    );
-  }
+  checkVisibleBtnLoadMore() {
+    if (store.state.list.length < store.state.totalCount) {
+      this.btnLoadMore.style.display = 'block';
+    }
 
-  // private async fetchList(): Promise<void> {
-  //   this.setList(await this.api.getApartments(store.state.filter, 1));
-  // }
-
-  async nextPage(): Promise<void> {
-    const nextPage = this.currentPage + 1;
-    const result =  await this.api.getApartments(store.state.filter, nextPage);
-
-    if (result) {
-      this.addItems(result);
-      this.currentPage = nextPage;
+    if (store.state.list.length >= store.state.totalCount) {
+      this.btnLoadMore.style.display = 'none';
     }
   }
 
   async init(): Promise<void> {
-    // await this.fetchList();
-    store.onChange((state) => this.setList(state.list));
-    await store.setFilter(store.state.filter);
-  }
+    store.onChange((state) => {
+      this.setList(state.list);
+      this.checkVisibleBtnLoadMore();
+    });
 
-  filter(filter: QueryParams) {
-    // store.setFilter(filter);
-    // this.currentFilter = filter;
-    // this.fetchList();
+    await store.setFilter(store.state.filter);
+
+    this.btnLoadMore?.addEventListener('click', async () => {
+      await store.nextPage();
+    });
   }
 }
 
 export const listComponent = new ListComponent();
 listComponent.init();
-
-
-// const btn = document.querySelector('#load-more');
-// btn?.addEventListener('click', () => {
-//   listComponent.filter({
-//     from: {
-//       numberOfRooms: 1,
-//       apartmentNumber: 50,
-//       area: 1,
-//       floor: 1,
-//       price: 1,
-//       numberOfFloors: 1,
-//     },
-//     to: {
-//       numberOfRooms: 4,
-//       apartmentNumber: 10000,
-//       area: 100,
-//       floor: 100,
-//       price: 100000000,
-//       numberOfFloors: 100,
-//     }
-//   });
-// })

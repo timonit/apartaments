@@ -1,3 +1,5 @@
+@import './common.scss';
+
 form {
   width: 100%;
   display: flex;
@@ -35,19 +37,41 @@ form {
     }
   }
 
-  input[type='checkbox'] {
-    padding: 10px 12px;
-    gap: 10px;
+  .number-of-rooms {
+    label {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      align-items: center;
 
-    width: 44px;
-    height: 44px;
+      span {
+        z-index: 10;
+      }
 
-    background: #ffffff;
-    border-radius: 50%;
+      :checked ~ span {
+        color: white;
+      }
 
-    margin: 0;
-    border: none;
-    appearance: none;
+      input[type='checkbox'] {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        margin: 0;
+        border: none;
+        appearance: none;
+        border-radius: 50%;
+        background: #ffffff;
+
+        &:checked {
+          background-color: $color-accent;
+          box-shadow: $shadow;
+        }
+      }
+    }
   }
 }
 

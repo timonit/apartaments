@@ -20,9 +20,8 @@ export type Store = {
   setDefaultFilter: () => void;
 };
 
-const defaultFilter = {
+export const defaultFilter: QueryParams = {
   from: {
-    numberOfRooms: 1,
     apartmentNumber: 1,
     area: 1,
     floor: 1,
@@ -30,14 +29,14 @@ const defaultFilter = {
     numberOfFloors: 1,
   },
   to: {
-    numberOfRooms: 4,
     apartmentNumber: 1000,
     area: 1000,
     floor: 1000,
     price: 100000000,
     numberOfFloors: 100,
   },
-}
+  numberOfRooms: [1, 2, 3, 4],
+};
 
 export const store: Store = {
   state: {
@@ -61,18 +60,23 @@ export const store: Store = {
     const api = new Api();
     const page = this.state.page + 1;
     const list = await api.getApartments(store.state.filter, page);
-    await this.setState({isFetching: false, list, filter: this.state.filter, page});
+    await this.setState({
+      isFetching: false,
+      list,
+      filter: this.state.filter,
+      page,
+    });
   },
   async setFilter(filter: QueryParams): Promise<void> {
     this.setStatus(true);
     const api = new Api();
-    const list = await api.getApartments(store.state.filter, 1);
-    await this.setState({isFetching: false, list, filter, page: 1});
+    const list = await api.getApartments(filter, 1);
+    await this.setState({ isFetching: false, list, filter, page: 1 });
   },
   async setStatus(isFetching: boolean): Promise<void> {
-    await this.setState({...this.state, isFetching});
+    await this.setState({ ...this.state, isFetching });
   },
   async setDefaultFilter(): Promise<void> {
     await this.setFilter(defaultFilter);
-  }
+  },
 };

@@ -23,6 +23,7 @@
     "vinyl-source-stream": "^2.0.0"
   },
   "dependencies": {
-    "json-server": "^0.17.0"
+    "json-server": "^0.17.0",
+    "range-slider-input": "^2.2.1"
   }
 }

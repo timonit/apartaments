@@ -1,4 +1,39 @@
 <form action="">
-  <input type="text">
-  <input type="text">
+  <div class="form-row number-of-rooms">
+    <label for="1room">
+      <input type="checkbox" name="numberofroom" id="1room" data-id="1">
+      <span>1к</span>
+    </label>
+    <label for="2room">
+      <input type="checkbox" name="numberofroom" id="2room" data-id="2">
+      <span>2к</span>
+    </label>
+    <label for="3room">
+      <input type="checkbox" name="numberofroom" id="3room" data-id="3">
+      <span>3к</span>
+    </label>
+    <label for="4room">
+      <input type="checkbox" name="numberofroom" id="4room" data-id="4">
+      <span>4к</span>
+    </label>
+  </div>
+  <div class="form-group">
+    <label><small>Стомость квартиры, ₽</small></label>
+    <div class="form-group-row">
+      <span>от <b class="from">18 900 000</b></span>
+      <span>до <b class="to">18 900 000</b></span>
+    </div>
+    <div id="price"></div>
+  </div>
+  <div class="form-group">
+    <label><small>Площадь, м²</small></label>
+    <div class="form-group-row">
+      <span>от <b class="from">33</b></span>
+      <span>до <b class="to">123</b></span>
+    </div>
+    <div id="area"></div>
+  </div>
+  <div class="btn-panel">
+    <button type="button" class="reset-btn"><small>Сбросить параметры</small></button>
+  </div>
 </form>

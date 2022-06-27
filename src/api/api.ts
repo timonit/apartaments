@@ -1,7 +1,7 @@
 import Apartment from './Apartment';
 import { IApi, QueryParams } from './i-api';
 
-type MinMax = { min: number; max: number };
+export type MinMax = { min: number; max: number };
 
 export default class Api implements IApi {
   origin = document.URL;
@@ -13,12 +13,15 @@ export default class Api implements IApi {
 
     for (const prop in from) params.append(`${prop}_gte`, String(from[prop]));
     for (const prop in to) params.append(`${prop}_lte`, String(to[prop]));
+    filter.numberOfRooms.forEach((num: number) =>
+      params.append('numberOfRooms', String(num))
+    );
 
     return params;
   }
 
   /**
-   * list apartments 
+   * list apartments
    */
   async getApartments(filter: QueryParams, page: number): Promise<Apartment[]> {
     const params = this.createParams(filter);

@@ -3426,6 +3426,11 @@ range-parser@~1.2.1:
   resolved "https://registry.yarnpkg.com/range-parser/-/range-parser-1.2.1.tgz#3cf37023d199e1c24d1a55b84800c2f3e6468031"
   integrity sha512-Hrgsx+orqoygnmhFbKaHE6c296J+HTAQXoxEF6gNupROmmGJRoyzfG3ccAveqCBrwr/2yxQ5BVd/GTl5agOwSg==
 
+range-slider-input@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/range-slider-input/-/range-slider-input-2.2.1.tgz#110a027d437d7b7e09e0dde75538774e027d4852"
+  integrity sha512-HlwZR+idp/3p4ZzbEIFv3NLTfcT2f2IyG5Ov184kTUzOi7pNPqoGXoJBKprOq7gQ43rtsIhMc4x9NCC/fh5h3A==
+
 raw-body@2.5.1:
   version "2.5.1"
   resolved "https://registry.yarnpkg.com/raw-body/-/raw-body-2.5.1.tgz#fe1b1628b181b700215e5fd42389f98b71392857"

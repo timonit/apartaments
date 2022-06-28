@@ -70,8 +70,9 @@ button {
     .result {
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
+      align-items: stretch;
       gap: 48px;
+      flex-grow: 1;
 
       .head {
         width: 100%;
@@ -110,5 +111,16 @@ button {
       }
     }
 
+  }
+}
+
+#scrollup {
+  cursor: pointer;
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+
+  &:hover {
+    box-shadow: $shadow;
   }
 }
